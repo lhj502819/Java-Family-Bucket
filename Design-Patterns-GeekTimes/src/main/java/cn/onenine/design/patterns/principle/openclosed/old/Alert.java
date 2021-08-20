@@ -9,4 +9,26 @@ package cn.onenine.design.patterns.principle.openclosed.old;
  */
 public class Alert {
 
+    private AlertRule rule;
+
+    private Notification notification;
+
+    public Alert(AlertRule rule, Notification notification) {
+        this.rule = rule;
+        this.notification = notification;
+    }
+
+    public void check(String api,long requestCount,long errorCount,long durationSeconds){
+
+        long tps = requestCount / durationSeconds;
+
+        if(tps > rule.getMatchedRule(api).getMaxTps()){
+            notification.notify(NotificationEmergencyLevel.URGENCY,"接口请求频繁");
+        }
+
+        if(errorCount > rule.getMatchedRule(api).getMaxErrorCount()){
+            notification.notify(NotificationEmergencyLevel.SERVER,"接口请求异常错误达到阈值");
+        }
+
+    }
 }
