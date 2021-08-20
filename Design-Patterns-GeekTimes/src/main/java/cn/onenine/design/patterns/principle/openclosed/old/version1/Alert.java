@@ -1,4 +1,4 @@
-package cn.onenine.design.patterns.principle.openclosed.old;
+package cn.onenine.design.patterns.principle.openclosed.old.version1;
 
 /**
  * Description：接口监控告警相关
@@ -6,6 +6,7 @@ package cn.onenine.design.patterns.principle.openclosed.old;
  * @author li.hongjian
  * @email lhj502819@163.com
  * @since 2021/8/19
+ * @version 1.0
  */
 public class Alert {
 

@@ -1,7 +1,7 @@
-package cn.onenine.design.patterns.principle.openclosed.old;
+package cn.onenine.design.patterns.principle.openclosed.old.version1;
 
 /**
- * Description：
+ * Description：通知类
  *
  * @author li.hongjian
  * @email lhj502819@163.com

@@ -1,4 +1,4 @@
-package cn.onenine.design.patterns.principle.openclosed.old;
+package cn.onenine.design.patterns.principle.openclosed.old.version3;
 
 /**
  * Description：通知紧急级别
